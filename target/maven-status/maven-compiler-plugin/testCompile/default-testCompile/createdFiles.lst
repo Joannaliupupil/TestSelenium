@@ -1,2 +1,6 @@
 com/example/SimpleTest.class
 com/example/SeleniumTest.class
+com/example/BaiduSearchTest.class
+com/example/UploadFileTest.class
+com/example/BaiduSettingTest.class
+com/example/AjaxTest.class

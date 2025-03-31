@@ -1,11 +1,12 @@
 package com.example;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.io.File;
 import java.nio.file.Paths;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 public class SimpleTest {
     public static void main(String[] args) {
@@ -46,6 +47,12 @@ public class SimpleTest {
             // 获取并验证页面标题
             String title = driver.getTitle();
             System.out.println("页面标题: " + title);
+            driver.get("https://www.baidu.com");
+            //
+            driver.findElement(By.id("su")).click();
+
+            driver.quit();
+
             
         } catch (Exception e) {
             System.out.println("测试过程中出现异常: " + e.getMessage());
